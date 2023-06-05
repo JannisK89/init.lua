@@ -23,5 +23,8 @@ vim.keymap.set("n", "<leader>Y", [["+Y]])
 -- Stop Q
 vim.keymap.set("n", "Q", "<nop>")
 
-
+-- Format
 vim.keymap.set("n", "<leader>f", "<cmd> lua vim.lsp.buf.format()<CR>")
+
+-- Show Documentation
+vim.keymap.set("n", "<leader>d", "K")
