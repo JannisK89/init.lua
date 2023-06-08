@@ -28,3 +28,9 @@ vim.keymap.set("n", "<leader>f", "<cmd> lua vim.lsp.buf.format()<CR>")
 
 -- Show Documentation
 vim.keymap.set("n", "<leader>d", "K")
+
+-- Open brackets
+vim.keymap.set("i", "<C-z>", "{<Enter><Enter>}<Escape>ka<Tab>")
+
+-- Open parentheses
+vim.keymap.set("i", "<C-x>", "()<Escape>i")
