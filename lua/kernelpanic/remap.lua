@@ -30,10 +30,10 @@ vim.keymap.set("n", "<leader>f", "<cmd> lua vim.lsp.buf.format()<CR>")
 vim.keymap.set("n", "<leader>d", "K")
 
 -- Open brackets
-vim.keymap.set("i", "<leader><C-o>", "{<Enter><Enter>}<Escape>ka<Tab>")
+vim.keymap.set("i", "<C-o>b", "{<Enter><Enter>}<Escape>ka<Tab>")
 
 -- Open parentheses
-vim.keymap.set("i", "<C-o>", "()<Escape>i")
+vim.keymap.set("i", "<C-o>p", "()<Escape>i")
 
 -- Auto create closing quotes
 vim.keymap.set("i", "\"", "\"\"<Escape>i")
