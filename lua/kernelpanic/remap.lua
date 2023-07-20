@@ -44,3 +44,6 @@ vim.keymap.set("n", "<leader>er", "<cmd> lua vim.diagnostic.open_float() <CR>")
 
 -- Cycle window
 vim.keymap.set("n", "<leader>w", "<C-W>w")
+
+-- Add ; to end of line
+vim.keymap.set("n", "<leader>,", "<S-a>;<Escape>")
