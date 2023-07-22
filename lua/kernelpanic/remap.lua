@@ -29,11 +29,17 @@ vim.keymap.set("n", "<leader>f", "<cmd> lua vim.lsp.buf.format()<CR>")
 -- Show Documentation
 vim.keymap.set("n", "<leader>d", "K")
 
--- Open brackets
-vim.keymap.set("i", "<C-o>b", "{<Enter><Enter>}<Escape>ka<Tab>")
+-- Open curly brackets - new line
+vim.keymap.set("i", "<C-o>C", "{<Enter><Enter>}<Escape>ka<Tab>")
+
+-- Open curly brackets
+vim.keymap.set("i", "<C-o>c", "{}<Escape>i")
 
 -- Open parentheses
 vim.keymap.set("i", "<C-o>p", "()<Escape>i")
+
+-- Open brackets 
+vim.keymap.set("i", "<C-o>p", "[]<Escape>i")
 
 -- Auto create closing quotes
 vim.keymap.set("i", "\"", "\"\"<Escape>i")
