@@ -39,7 +39,7 @@ vim.keymap.set("i", "<C-o>c", "{}<Escape>i")
 vim.keymap.set("i", "<C-o>p", "()<Escape>i")
 
 -- Open brackets 
-vim.keymap.set("i", "<C-o>p", "[]<Escape>i")
+vim.keymap.set("i", "<C-o>b", "[]<Escape>i")
 
 -- Auto create closing quotes
 vim.keymap.set("i", "\"", "\"\"<Escape>i")
