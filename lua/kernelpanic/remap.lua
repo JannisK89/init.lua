@@ -53,3 +53,6 @@ vim.keymap.set("n", "<leader>w", "<C-W>w")
 
 -- Add ; to end of line
 vim.keymap.set("n", "<leader>,", "<S-a>;<Escape>")
+
+-- Save + Format
+vim.keymap.set("n", "<leader>s", "<cmd> lua vim.lsp.buf.format()<CR> :update<cr>")
