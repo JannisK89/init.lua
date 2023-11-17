@@ -35,6 +35,11 @@ local plugins = {
   { 'hrsh7th/cmp-nvim-lsp' },
   { 'hrsh7th/nvim-cmp' },
   { 'L3MON4D3/LuaSnip' },
+  'ryanoasis/vim-devicons',
+  {
+    'nvim-lualine/lualine.nvim',
+    dependencies = 'nvim-tree/nvim-web-devicons'
+  },
 }
 
 local opts = {}
