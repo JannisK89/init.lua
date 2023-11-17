@@ -4,5 +4,11 @@ vim.keymap.set('n', '<C-p>', builtin.git_files, {})
 
 -- Requires ripgrep to work
 vim.keymap.set('n', '<leader>ps', function()
-	builtin.grep_string({ search = vim.fn.input("Grep > ") })
+  builtin.grep_string({ search = vim.fn.input("Grep > ") })
 end)
+
+return {
+  'nvim-telescope/telescope.nvim',
+  tag = '0.1.4',
+  dependencies = { 'nvim-lua/plenary.nvim' }
+}
